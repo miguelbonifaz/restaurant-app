@@ -5,8 +5,23 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "@inertiajs/vue3": "^1.0.0",
+        "@tailwindcss/forms": "^0.5.3",
+        "@trivago/prettier-plugin-sort-imports": "^4.0.0",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "autoprefixer": "^10.4.12",
         "axios": "^1.1.2",
+        "laravel-echo": "^1.15.0",
         "laravel-vite-plugin": "^0.7.2",
-        "vite": "^4.0.0"
+        "postcss": "^8.4.18",
+        "prettier": "2.8.4",
+        "pusher-js": "^8.0.1",
+        "tailwindcss": "^3.2.1",
+        "vite": "^4.0.0",
+        "vue": "^3.2.41"
+    },
+    "dependencies": {
+        "@headlessui/vue": "^1.7.10",
+        "@heroicons/vue": "^2.0.16"
     }
 }

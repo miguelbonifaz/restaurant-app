@@ -2,12 +2,15 @@
 /node_modules
 /public/build
 /public/hot
+/public/vendor/horizon
 /public/storage
 /storage/*.key
 /vendor
 .env
 .env.backup
+.env.testing
 .env.production
+dump.rdb
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
