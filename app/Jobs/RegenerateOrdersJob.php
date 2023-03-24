@@ -19,7 +19,8 @@ class RegenerateOrdersJob implements ShouldQueue
 
     public function handle(): void
     {
-        Artisan::call('migrate:fresh --seed', [
+        Artisan::call('migrate:fresh', [
+            '--seed' => true,
             '--force' => true,
         ]);
     }
