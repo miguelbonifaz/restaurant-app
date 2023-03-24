@@ -94,15 +94,4 @@ let props = defineProps({
 Echo.channel('update-orders').listen('UpdateOrdersEvent', (e) => {
     router.reload()
 })
-
-let finalizeOrder = (order) => {
-    router.post(
-        route('orders.finalize', [order.id]),
-        {},
-        {
-            onBefore: () =>
-                confirm(`Seguro desea finalizar la order # ${order.id}?`),
-        },
-    )
-}
 </script>

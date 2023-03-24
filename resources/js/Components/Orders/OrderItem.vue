@@ -32,6 +32,7 @@
 </template>
 
 <script setup>
+import { router } from '@inertiajs/vue3'
 import { computed } from 'vue'
 
 let props = defineProps({
@@ -46,6 +47,17 @@ let total = computed(() => {
         return total + food.pivot.quantity * food.price
     }, 0)
 })
+
+let finalizeOrder = (order) => {
+    router.post(
+        route('orders.finalize', [order.id]),
+        {},
+        {
+            onBefore: () =>
+                confirm(`Seguro desea finalizar la order # ${order.id}?`),
+        },
+    )
+}
 </script>
 
 <style scoped></style>
