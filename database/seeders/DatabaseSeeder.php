@@ -14,43 +14,66 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->create(['email' => 'miguel@gmail.com']);
+        User::factory()->create(['email' => 'bonifaz@gmail.com']);
 
-//        Paella - Un plato español tradicional de arroz, que se cocina en una paellera. Es un plato versátil, ya que se puede preparar con una variedad de ingredientes, pero normalmente se sirve con mariscos, pollo, verduras y especias. La paella es un plato muy aromático, con sabores intensos y ricos, que se debe disfrutar con una copa de vino blanco o rosado.
-//
-//    Tacos - Los tacos son un platillo mexicano que consiste en una tortilla de maíz rellena de carne, frijoles, queso, lechuga y salsa. Hay muchas variaciones de tacos, pero los más comunes son de carne asada, pollo, pescado o cerdo. Los tacos son un plato muy popular en México y en todo el mundo, debido a su sabor delicioso y a la facilidad de preparación.
-//
-//    Pad Thai - El Pad Thai es uno de los platos más famosos de la cocina tailandesa. Consiste en fideos de arroz salteados con camarones, tofu, cacahuetes y una salsa agridulce. Es un plato muy sabroso, con una mezcla de sabores dulces, picantes y ácidos. El Pad Thai se sirve con una variedad de guarniciones, como brotes de soja, cilantro y limón, que complementan perfectamente los sabores del plato.
-//
-//    Sushi - El sushi es un plato japonés que se compone de arroz cocido en vinagre y relleno de pescado crudo, aguacate y otros ingredientes. Hay muchas variedades de sushi, desde el tradicional nigiri hasta el moderno sushi enrollado (maki). El sushi es un plato muy popular en todo el mundo, debido a su sabor único y a la presentación artística de los rollos.
-//
-//    Moussaka - La moussaka es un platillo griego de capas de berenjena, carne picada, tomates y bechamel, gratinado en el horno. Es un plato muy sabroso y reconfortante, que se sirve caliente. La moussaka se acompaña con una ensalada griega y pan de pita, y es una excelente opción para una cena de invierno.
-//
-//    Chiles en Nogada - Los chiles en nogada son un platillo mexicano tradicional que se prepara durante la temporada de la Independencia de México. Consiste en chiles poblanos rellenos de picadillo de carne, bañados en una salsa de nueces y granada. Es un plato muy colorido y festivo, que representa los colores de la bandera mexicana. Los chiles en nogada se acompañan con arroz y frijoles, y son una excelente opción para celebrar las fiestas patrias.
-//
-//    Escargots - Los escargots son un plato francés de caracoles cocidos en mantequilla y ajo, servidos en sus conchas con pan tostado. Es un plato muy elegante y sofisticado, que se sirve como aperitivo en los restaurantes franceses más exclusivos. Los escargots son un plato muy sabroso
         Menu::factory()->createMany([
             [
-                'name' => 'Paella', 'description' => 'Un plato español tradicional de arroz, que se cocina en una paellera. Es un plato versátil, ya que se puede preparar con una variedad de ingredientes, pero normalmente se sirve con mariscos, pollo, verduras y especias. La paella es un plato muy aromático, con sabores intensos y ricos, que se debe disfrutar con una copa de vino blanco o rosado', 'quantity' => rand(1, 3)
+                'name' => 'Ensalada César', 'description' => 'Una deliciosa ensalada de lechuga, pollo asado, queso parmesano y croutones, todo ello aliñado con una salsa cremosa de anchoas.', 'quantity' => rand(1, 8)
             ],
             [
-                'name' => 'Tacos', 'description' => 'Los tacos son un platillo mexicano que consiste en una tortilla de maíz rellena de carne, frijoles, queso, lechuga y salsa. Hay muchas variaciones de tacos, pero los más comunes son de carne asada, pollo, pescado o cerdo. Los tacos son un plato muy popular en México y en todo el mundo, debido a su sabor delicioso y a la facilidad de preparación', 'quantity' => rand(1, 3)
+                'name' => 'Tacos de pescado', 'description' => 'Una delicia mexicana, los tacos de pescado son tortillas rellenas de pescado frito, cebolla, cilantro y una salsa picante.', 'quantity' => rand(1, 8)
             ],
             [
-                'name' => 'Pad Thai', 'description' => 'El Pad Thai es uno de los platos más famosos de la cocina tailandesa. Consiste en fideos de arroz salteados con camarones, tofu, cacahuetes y una salsa agridulce. Es un plato muy sabroso, con una mezcla de sabores dulces, picantes y ácidos. El Pad Thai se sirve con una variedad de guarniciones, como brotes de soja, cilantro y limón, que complementan perfectamente los sabores del plato', 'quantity' => rand(1, 3)
+                'name' => 'Spaghetti alla carbonara', 'description' => 'Una pasta cremosa y deliciosa, hecha con panceta, queso parmesano, huevo y pimienta negra.', 'quantity' => rand(1, 8)
             ],
             [
-                'name' => 'Sushi', 'description' => 'El sushi es un plato japonés que se compone de arroz cocido en vinagre y relleno de pescado crudo, aguacate y otros ingredientes. Hay muchas variedades de sushi, desde el tradicional nigiri hasta el moderno sushi enrollado (maki). El sushi es un plato muy popular en todo el mundo, debido a su sabor único y a la presentación artística de los rollos', 'quantity' => rand(1, 3)
+                'name' => 'Sopa de pollo', 'description' => 'Una sopa reconfortante hecha con pollo, verduras, fideos y hierbas aromáticas, perfecta para los días fríos.', 'quantity' => rand(1, 8)
             ],
             [
-                'name' => 'Moussaka', 'description' => 'La moussaka es un platillo griego de capas de berenjena, carne picada, tomates y bechamel, gratinado en el horno. Es un plato muy sabroso y reconfortante, que se sirve caliente. La moussaka se acompaña con una ensalada griega y pan de pita, y es una excelente opción para una cena de invierno', 'quantity' => rand(1, 3)
+                'name' => 'Pizza Margherita', 'description' => 'Una pizza clásica italiana, con una base de tomate, mozzarella fresca y hojas de albahaca.', 'quantity' => rand(1, 8)
             ],
             [
-                'name' => 'Chiles en Nogada', 'description' => 'Los chiles en nogada son un platillo mexicano tradicional que se prepara durante la temporada de la Independencia de México. Consiste en chiles poblanos rellenos de picadillo de carne, bañados en una salsa de nueces y granada. Es un plato muy colorido y festivo, que representa los colores de la bandera mexicana. Los chiles en nogada se acompañan con arroz y frijoles, y son una excelente opción para celebrar las fiestas patrias', 'quantity' => rand(1, 3)
+                'name' =>  'Bistec a la parrilla', 'description' => 'Un filete de carne a la parrilla, sazonado con sal y pimienta y servido con una guarnición de patatas fritas.', 'quantity' => rand(1, 8)
             ],
             [
-                'name' => 'Escargots', 'description' => 'Los escargots son un plato francés de caracoles cocidos en mantequilla y ajo, servidos en sus conchas con pan tostado. Es un plato muy elegante y sofisticado, que se sirve como aperitivo en los restaurantes franceses más exclusivos. Los escargots son un plato muy sabroso', 'quantity' => rand(1, 3)
+                'name' => 'Sushi', 'description' => 'Una deliciosa comida japonesa hecha con arroz y pescado crudo, enrollada en una hoja de algas nori.', 'quantity' => rand(1, 8),
             ],
+            [
+                'name' => 'Pollo a la naranja', 'description' => 'Un plato chino que combina pollo frito en una salsa dulce y picante de naranja, servido con arroz blanco.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Cazuela de pollo', 'description' => 'Una mezcla de pollo, arroz, verduras y caldo, todo horneado junto para crear un plato sabroso y reconfortante.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Hot Dogs', 'description' => 'Un clásico americano, los hot dogs son salchichas calientes en un panecillo, servido con ketchup, mostaza y/o cebolla.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Paella', 'description' => 'Una deliciosa comida española, hecha con arroz, mariscos, pollo y chorizo, todo ello cocido junto en un caldo sabroso.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Costillas BBQ', 'description' => 'Costillas de cerdo cocidas lentamente y luego cubiertas con una salsa barbacoa dulce y picante.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Poutine', 'description' => 'Un plato canadiense que consiste en patatas fritas cubiertas con queso y salsa de carne.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Falafel', 'description' => 'Una comida vegetariana del Medio Oriente, hecha con garbanzos, hierbas y especias, y servida en un pan de pita con salsa tzatziki.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Pollo al curry', 'description' => 'Un plato de la cocina india, hecho con pollo, especias y una salsa cremosa de curry, servido con arroz basmati.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Arroz con frijoles', 'description' => 'Un plato latinoamericano, hecho con arroz y frijoles negros, con cebolla, ajo y especias.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Burritos', 'description' => 'Un plato mexicano, hecho con una tortilla de harina rellena de carne, arroz, frijoles, queso y salsa.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Sopa de miso', 'description' => 'Una sopa japonesa hecha con caldo de dashi, pasta de soja, tofu y algas.', 'quantity' => rand(1, 8)
+            ],
+            [
+                'name' => 'Churrasco', 'description' => 'Un plato sudamericano, hecho con carne asada, servido con arroz, frijoles y ensalada.', 'quantity' => rand(1, 8)
+            ]
         ]);
     }
 }
